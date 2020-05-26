@@ -1,0 +1,24 @@
+{
+  "name": "urls_shorten",
+  "version": "1.0.0",
+  "description": "group multiple urls to one",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manibharathytu/urls_shorten.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manibharathytu/urls_shorten/issues"
+  },
+  "homepage": "https://github.com/manibharathytu/urls_shorten#readme",
+  "dependencies": {
+    "md5": "^2.2.1",
+    "nodejs-base64": "^1.0.3",
+    "pickle": "^0.2.0"
+  }
+}
