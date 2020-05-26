@@ -62,7 +62,7 @@ const saveUrlMap = function (base64Str) {
 
 //create a server object:
 http.createServer(handleRequest)
-    .listen(8080); //the server object listens on port 8080
+    .listen(80); //the server object listens on port 8080
 
 
 const htmlTemplate = "urls.forEach(urlOpen);function urlOpen(url, i){    window.open(url);}</script>"
