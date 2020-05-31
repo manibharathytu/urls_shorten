@@ -1,0 +1,12 @@
+apache server :
+
+
+
+
+
+
+
+
+
+ssl in apache :
+reason : so that ssl doesnt have to be implemented in each apps and doesnt have to be run by each app at run time
