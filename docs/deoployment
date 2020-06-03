@@ -1,12 +1,26 @@
 apache server :
 
+if apache didnt come with the ubuntu :
+sudo apt install apache2
 
+sudo service apache2 restart
+sudo systemctl enable apache - for startup on system startup
 
+-------
+a2enmod proxy
+a2enmod proxy_http
+------
 
-
-
-
-
+substitute : systemctl reload apache2
+-------
 
 ssl in apache :
 reason : so that ssl doesnt have to be implemented in each apps and doesnt have to be run by each app at run time
+
+----------------
+
+links:
+
+* https://www.digitalocean.com/community/tutorials/apache-basics-installation-and-configuration-troubleshooting
+* https://httpd.apache.org/docs/2.4/howto/reverse_proxy.html
+
