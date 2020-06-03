@@ -3,3 +3,5 @@ pickle_db backup
 favicon request is coming. stop it.
 
 close the base window after opening others.
+
+thros error while intitial startup w/o pickle_db file

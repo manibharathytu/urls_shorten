@@ -35,6 +35,7 @@ const handleRequest = function (req, res) {
     //     return;
         const path = String(req.url);
     if (path.startsWith('/save/')) {
+        console.log("inside save")
         const base64Str = path.substring(6, path.length)
         saveUrlMap(base64Str);
         res.writeHead(200, {
@@ -72,6 +73,7 @@ const getUrls = function (query) {
 const saveUrlMap = function (base64Str) {
     const hash = md5(base64Str)
     urlMap[hash] = base64Str;
+    console.log('saved: '+ hash+' : '+base64Str)
 }
 
 //create a server object:
