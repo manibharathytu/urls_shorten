@@ -21,8 +21,9 @@ fetchDB();
 const syncDB = function () {
     pickle.dumps(urlMap, function (pickled) {
         fs.writeFile('pickle_db', pickled, function (err) {
-            if (err) console.log("Saving error");
-            // console.log("Saved")
+            console.log(urlMap)
+            if (err) {console.log("Saving error"); return;}
+            console.log("Saved")
         })
     })
 }
@@ -74,6 +75,7 @@ const saveUrlMap = function (base64Str) {
     const hash = md5(base64Str)
     urlMap[hash] = base64Str;
     console.log('saved: '+ hash+' : '+base64Str)
+    
 }
 
 //create a server object:
@@ -91,7 +93,7 @@ const gettUrlsStr = function (urls) {
         urlStr += urls[i]
         urlStr += "',"
     }
-    urlStr = urlStr.substring(0, urlStr.length - 1)
+    urlStr = urlStr.substring(0, urlStr.length - 1) // todo : fix the issue of js error when not found
     urlStr += "];";
     return urlStr;
 }
