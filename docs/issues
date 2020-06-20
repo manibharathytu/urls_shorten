@@ -20,8 +20,6 @@ Both the issues try to reproduce and fix.
 2nd issue reproduce in local by using that corrupted pickle_db file
 --------------
 
-remove logs
-add gitignore pickle pickle_db
 save pickle db in cloud or atleast take copy every 5 mins. some mechanism for it to run incase of pickle_db corruption
 
 mylinksml 

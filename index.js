@@ -22,7 +22,10 @@ const syncDB = function () {
     pickle.dumps(urlMap, function (pickled) {
         fs.writeFile('pickle_db', pickled, function (err) {
             //console.log(urlMap)
-            if (err) {//console.log("Saving error"); return;}
+            if (err) {
+                //console.log("Saving error"); 
+            return;
+        }
             //console.log("Saved")
         })
     })
